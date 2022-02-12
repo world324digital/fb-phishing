@@ -52,3 +52,6 @@ command > python -m pip install requests
 ```
 Happy Hacking Day :) Educational Purpose Only ....
 ```
+
+username: admin
+pwd: admin
