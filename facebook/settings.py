@@ -25,7 +25,7 @@ SECRET_KEY = '&smdip^8m*nyrj5)d$5g3r-tl@s^l(-q9&u*7gz!9(o^o3kz$0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1','facebook.com']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','facebook.com', 'fb-phishing.herokuapp.com']
 
 
 # Application definition
@@ -102,3 +102,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+import django_heroku
+# Activate Django-Heroku.
+django_heroku.settings(locals())
